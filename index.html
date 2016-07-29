@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Proto_Front_End</title>
+
+</head>
+
+<body>
+
+	<div id="app">
+		<p>{{ message }}</p>
+		<input v-model="message">
+	</div>
+
+
+	<!-- script -->
+    <script src = "node_modules/vue/dist/vue.min.js"></script>
+	<script data-main = "app/require_config.js" src = "node_modules/requirejs/require.js"></script>
+	<script>
+		require(['require_config'],function(){
+			require(['app/index.js']);
+		});
+	</script>
+</body>
+
+</html>
